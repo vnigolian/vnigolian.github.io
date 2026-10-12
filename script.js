@@ -82,6 +82,7 @@ function renderPapers() {
     const links = el("div", "entry-links");
     if (p.link) links.appendChild(externalLink(p.link, "Project page ↗"));
     if (p.pdf) links.appendChild(externalLink(p.pdf, "PDF ↗"));
+    if (p.code) links.appendChild(externalLink(p.code, "Code ↗"));
 
     let abstractPanel = null;
     let bibtexPanel = null;
@@ -146,13 +147,11 @@ function renderCodeProjects() {
     main.appendChild(el("div", "entry-year mono", proj.status === "archived" ? "archived" : "active"));
     main.appendChild(el("div", "entry-title", proj.name));
     main.appendChild(el("div", "entry-desc", proj.description));
-    
 
     const links = el("div", "entry-links");
     if (proj.repo_link) links.appendChild(externalLink(proj.repo_link, "Repository ↗"));
     if (proj.gui_link) links.appendChild(externalLink(proj.gui_link, "Web Interface ↗"));
     main.appendChild(links);
-
 
     if (proj.tags && proj.tags.length) {
       const tags = el("div", "entry-tags");
@@ -179,8 +178,7 @@ function renderOtherProjects() {
     main.appendChild(el("div", "entry-year mono", proj.status === "archived" ? "archived" : "active"));
     main.appendChild(el("div", "entry-title", proj.name));
     main.appendChild(el("div", "entry-desc", proj.description));
-   
-  
+
     const links = el("div", "entry-links");
     if (proj.repo_link) links.appendChild(externalLink(proj.repo_link, "Repository ↗"));
     if (proj.gui_link) links.appendChild(externalLink(proj.gui_link, "Web Interface ↗"));

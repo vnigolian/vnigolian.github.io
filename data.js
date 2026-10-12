@@ -60,6 +60,7 @@ const PAPERS = [
     bibtex:
       "@article{Nigolian:2026:boundary_deformation_maps,\n  author = {Nigolian, Valentin Z. and Campen, Marcel and Bommes, David},\n  title = {Robust Deformation-based 3D Bijective Mapping through Differential Boundary Shape Matching},\n  journal = {ACM Transactions on Graphics},\n  volume = {45},\n  number = {6},\n  year = {2026},\n  publisher = {ACM},\n  address = {New York, NY, USA},\n  doi = {10.1145/3842573}\n}",
     tags: ["tetrahedral mapping", "mesh morphing"],
+    code: "https://github.com/cgg-bern/boundary-deformation-maps",
   },
   {
     title:
@@ -75,6 +76,7 @@ const PAPERS = [
     bibtex:
       "@article{Nigolian:2024:cluster_mesh_SAE,\n  author = {Nigolian, Valentin Z. and Campen, Marcel and Bommes, David},\n  title = {A Progressive Embedding Approach to Bijective Tetrahedral Maps driven by Cluster Mesh Topology},\n  journal = {ACM Transactions on Graphics},\n  volume = {43},\n  number = {6},\n  year = {2024},\n  publisher = {ACM},\n  address = {New York, NY, USA},\n  doi = {10.1145/3687992}\n}",
     tags: ["tetrahedral mapping", "robust methods"],
+    code: "https://github.com/cgg-bern/cluster-mesh-SAE",
   },
   {
     title: "Expansion Cones: A Progressive Volumetric Mapping Framework",
@@ -135,15 +137,6 @@ const CODE_PROJECTS = [
     tags: ["C++", "tetrahedral meshing"],
     status: "active",
     image: "images/para_helicoidal_ring.png"
-  },
-  {
-    name: "Shrink-and-Expand",
-    description:
-      "Reference C++ implementation of the latest Shrink-and-Expand method (cf. paper above).",
-    repo_link: "https://github.com/cgg-bern/cluster-mesh-SAE",
-    tags: ["C++", "tetrahedral mapping"],
-    status: "active",
-    image: "images/papers/cluster-mesh-sae-teaser.png",
   },
   // Add new code projects here. `status` is "active" or "archived" —
   // used only to fade archived items slightly, not to hide them.
